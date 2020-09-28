@@ -24,6 +24,10 @@ def index(request):
     return render(request, "console/index.html")
 
 
+def login_view(request):
+    return render(request, "console/login.html")
+
+
 def register(request):
     return render(request, "console/register.html", {
         "form": NewRegisterForm()
