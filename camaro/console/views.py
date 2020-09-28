@@ -6,3 +6,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 def index(request):
     return render(request, "console/index.html")
 
+
+def register(request):
+    return render(request, "console/register.html")
+

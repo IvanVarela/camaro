@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
 }
+
 body .home {
     display: -ms-flexbox;
     display: flex;
