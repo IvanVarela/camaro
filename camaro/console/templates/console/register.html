@@ -5,19 +5,15 @@
 
         <img alt="" class="mb-4" height="50" src="" width="*">
         <h1 class="h3 mb-3 font-weight-normal">Complete sus Datos</h1>
-        <label class="sr-only" for="inputFirstName">Nombres</label>
-        <input autofocus class="form-control" name="firstName" id="inputFirstName" placeholder="Nombres" required type="text">
-        <label class="sr-only" for="inputLastName">Apellidos</label>
-        <input autofocus class="form-control" name="lastName" id="inputLastName" placeholder="Apellidos" required type="text">
-        <label class="sr-only" for="inputPseudo">Apellidos</label>
-        <input autofocus class="form-control" name="alias" id="inputPseudo" placeholder="Alias" required type="text">
-        <label class="sr-only" for="inputEmail">Correo Electrónico</label>
-        <input autofocus class="form-control" name="email" id="inputEmail" placeholder="Correo Electrónico" required type="email">
-        <label class="sr-only" for="inputPassword">Password</label>
-        <input class="form-control" name="password" id="inputPassword" placeholder="Password" required type="password">
+
+        {{ form.firstName }}
+        {{ form.lastName }}
+        {{ form.alias }}
+        {{ form.email }}
+        {{ form.password }}<br>
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Solicitar Registro</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2020 elguaire.com</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2020 </p>
 
     </form>
 {% endblock %}
